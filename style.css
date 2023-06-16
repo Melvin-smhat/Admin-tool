@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #172238;
+}
+.login{
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+.login h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.login form .form-group{
+    margin-bottom: 12px;
+}
+.login form input[type="submit"]{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.button{
+    margin-left: 230px;
+    font-weight: 400;
+}
+.button:hover{
+    color: #019713;
+    background: #172238;
+}
+.login a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.login a:hover {
+    color: #172238;
+}
+span{
+    color: #28a745;
+    font-weight: 700;
+}
+.font-size{
+    font-size: 20px;
+    font-weight: 500;
+}
+.avatar-cont {
+    width: 120px;
+    height: auto;
+    margin: auto;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin-top: -60px;
+    border-radius: 50%;
+    top: 10em;
+    left: calc(50% - 50px);
+}
+
+/* media queries...................................................................... */
+
+@media screen and (max-width: 480px) {
+    .login {
+        width: 220px;
+        height: auto;
+        background: #ffffff;
+    }
+
+    .avatar {
+        width: 60px;
+        height: 60px;
+        top: 15em;
+        margin-left: 20px;
+    }
+
+    .login h1 {
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+
+    .button {
+        margin-left: 100px;
+        width: 80px;
+        margin-top: 10px;
+
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 480px) {
+    .login {
+            width: 250px;
+            height: auto;
+            background: #ffffff;
+        }
+    
+        .avatar {
+            width: 60px;
+            height: 60px;
+            top: 15em;
+            margin-left: 20px;
+        }
+    
+        .login h1 {
+            font-size: 25px;
+            margin-bottom: 18px;
+        }
+    
+        .button {
+            margin-left: 130px;
+            width: 80px;
+            margin-top: 10px;
+    
+        }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px){
+    .login {
+            width: 300px;
+            height: auto;
+            background: #ffffff;
+        }
+    
+        .avatar {
+            width: 80px;
+            height: 80px;
+            top: 14em;
+            margin-left: 12.5px;
+        }
+    
+        .login h1 {
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+    
+        .button {
+            margin-left: 180px;
+            width: 80px;
+            margin-top: 10px;
+    
+        }
+}
+
+
+/* suggestion box css................................................................................ */
+.container{
+    width: 500px;
+    height: min-content;
+    padding: 40px;
+    border-radius: 2px;
+    border: 1px solid #fff;
+}
+.container h1{
+    font-size: 25px;
+    font-weight: 400;
+    padding-right: 10%;
+    color: #ffffff;
+    text-align: center;
+}
+.suggestion textarea{
+    width: 420px;
+    height: 150px;
+    max-height: min-content;
+    border: 0;
+    border-radius: 5px;
+    resize: none;
+    padding: 0 30px;
+}
+hr{
+    width: auto;
+    height: 10px;
+    color: #fff;
+}
+.sec-button{
+    margin-left: 40%;
+    width: 80px;
+    
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 300px;
+        height: min-content;
+        padding: 30px;
+        border-radius: 2px;
+        border: 1px solid #fff;
+    }
+
+    .container h1 {
+        font-size: 16px;
+        font-weight: 400;
+        padding-right: 5%;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .suggestion textarea {
+        width: 240px;
+        height: 130px;
+        max-height: min-content;
+        border: 0;
+        border-radius: 5px;
+        resize: none;
+        padding: 0 30px;
+        margin: auto;
+    }
+        .sec-button {
+            margin-left: 31%;
+            width: 70px;
+    
+        }
+}
+
+@media screen and (max-width: 600px) and (min-width: 480px){
+    .container {
+            width: 400px;
+            height: min-content;
+            padding: 40px;
+            border-radius: 2px;
+            border: 1px solid #fff;
+        }
+    
+        .container h1 {
+            font-size: 20px;
+            font-weight: 400;
+            padding-right: 10%;
+            color: #ffffff;
+        }
+    
+        .suggestion textarea {
+            width: 315px;
+            height: 150px;
+            max-height: min-content;
+            border: 0;
+            border-radius: 5px;
+            resize: none;
+            padding: 0 30px;
+            margin: auto;
+        }
+}
+
+/* responses css............................................................................. */
+
+.res-container{
+       width: 90%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+    
+}
+
+.content{
+        flex-basis: 80%;
+        background: #d1edff;
+        border-radius: 10px;
+        padding: 20px 12px;
+        transition: 0.5s;
+        margin-bottom: 14%;
+        margin-top: -150px;     
+        display: block;
+
+}
+.content:hover {
+    box-shadow: 0px 0px 10px 0px rgba(7, 250, 47, 0.2);
+    transform: translateY(-5px);
+}
+.row{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+.res-container h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 200px;
+}
+.span-ad{
+    margin-left: 82%;
+}
+.content i{
+    height: 100px;
+    width: 500px;
+    padding-left: 96%;
+    
+}
+.icon{
+    border: 2px solid #12f7ff;
+        display: flex;
+        margin-bottom: 3rem;
+        align-items: center;
+        font-size: 3rem;
+        border-radius: 50%;
+        position: relative;
+        color: #fff;
+        box-shadow: 0px 0px 10px 0px rgba(6, 226, 255, 0.2);
+        align-items: center;
+        justify-content: center;
+}
+.sec-icon{
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        position: relative;
+        color: #ccc;
+}
+
+@media screen and (max-width: 480px) {
+    .res-container {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .content {
+        flex-basis: 80%;
+        background: #d1edff;
+        border-radius: 10px;
+        margin-bottom: 54%;
+        padding: 20px 12px;
+        transition: 0.5s;
+        margin-top: -150px;
+        margin-left: 70px;
+        display: block;
+
+    }
+    .content p{
+        font-size: 12px;
+    }
+
+    .row {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .res-container h2 {
+        font-size: 25px;
+        font-weight: 600;
+        color: #fff;
+        padding-bottom: 200px;
+    }
+
+    .span-ad {
+        margin-left: 51%;
+        font-size: 12px;
+    }
+
+    .content i {
+        padding-left: 93%;
+
+
+    }
+    .icon{
+    border: 2px solid #12f7ff;
+        display: flex;
+        margin-bottom: 3rem;
+        align-items: center;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        position: relative;
+        color: #fff;
+        box-shadow: 0px 0px 10px 0px rgba(6, 226, 255, 0.2);
+}
+.sec-icon{
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        position: relative;
+        color: #ccc;
+}
+}
+
+@media screen and (max-width: 600px) and (min-width: 480px) {
+    .res-container {
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            padding-top: 50px;
+    
+        }
+    
+        .content {
+            flex-basis: 80%;
+            background: #d1edff;
+            border-radius: 10px;
+            margin-bottom: 48%;
+            padding: 20px 12px;
+            transition: 0.5s;
+            margin-top: -150px;
+            display: block;
+    
+        }
+    
+        .row {
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+            text-align: left;
+        }
+    
+        .res-container h2 {
+            font-size: 25px;
+            font-weight: 600;
+            color: #fff;
+            padding-bottom: 200px;
+        }
+    
+        .span-ad {
+            margin-left: 57%;
+            font-size: 12px;
+        }
+    
+        .content i {
+            padding-left: 93%;
+            
+    
+        }
+        .icon{
+        border: 2px solid #12f7ff;
+        display: flex;
+        margin-bottom: 3rem;
+        align-items: center;
+        font-size: 2rem;
+        border-radius: 50%;
+        position: relative;
+        color: #fff;
+        box-shadow: 0px 0px 10px 0px rgba(6, 226, 255, 0.2);
+}
+.sec-icon{
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        position: relative;
+        color: #ccc;
+}
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .res-container {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+
+    }
+
+    .content {
+        flex-basis: 80%;
+        background: #d1edff;
+        border-radius: 10px;
+        margin-bottom: 30%;
+        padding: 20px 12px;
+        transition: 0.5s;
+        margin-top: -150px;
+        display: block;
+        margin-right: 15px;
+
+    }
+
+    .row {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+    .content p{
+        font-size: 12px;
+    }
+    .res-container h3{
+        font-size: 20px;
+    }
+    .res-container h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        padding-bottom: 200px;
+    }
+    .span-ad {
+        margin-left: 63%;
+    }
+
+    .content i {
+        padding-left: 95%;
+
+
+    }
+     .icon{
+        border: 2px solid #12f7ff;
+        display: flex;
+        margin-bottom: 3rem;
+        align-items: center;
+        font-size: 2rem;
+        border-radius: 50%;
+        position: relative;
+        color: #fff;
+        box-shadow: 0px 0px 10px 0px rgba(6, 226, 255, 0.2);
+}
+.sec-icon{
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        position: relative;
+        color: #ccc;
+}
+}
